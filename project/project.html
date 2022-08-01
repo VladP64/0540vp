@@ -1,0 +1,193 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+			integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+			crossorigin="anonymous"
+		/>
+		<script src="https://kit.fontawesome.com/dc4f8560f3.js" crossorigin="anonymous"></script>
+
+		<title>Главная страница</title>
+		<style>
+			body {
+            background-color: rgb(173, 211, 226);
+            }
+			.box {
+				height: 300px;
+				width: 370px;
+				border: 1px solid grey;
+                border-radius: 3px;
+				margin: 3px;
+				margin-top: 10px;
+			}
+		</style>
+	</head>
+	<body>
+
+<!-- Nav menu start -->
+		<nav class="navbar navbar-expand-md navbar-dark" style="background-color: rgb(98, 150, 188)">
+			<a class="navbar-brand" href="/"
+				><img src="img/ap7-log.jpg" alt="logo" style="width: 5rem"
+			/></a>
+			<button
+				class="navbar-toggler"
+				type="button"
+				data-toggle="collapse"
+				data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent"
+				aria-expanded="false"
+				aria-label="Переключатель навигации"
+			>
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+
+                    <li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Главная
+						</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="project-auth.html">Наши контакты</a>
+						<a class="dropdown-item" href="project-booking.html">Бронирование</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="project-map.html">Расположение</a>
+					</div>
+					</li>
+
+					<li class="nav-item">
+                        <a class="nav-link" href="project-booking.html">Бронирование</a>
+					</li>
+
+                <!-- <li class="nav-item">
+                    <a class="nav-link" 
+					href="https://api.fondy.eu/api/checkout?button=rwn2jdwns2excopz25im2m6c8tfjkn5c"                        
+					>Оплата</a>
+                </li> -->
+
+				<li class="nav-item">
+                    <a class="nav-link" href="project-pay.html">Оплата</a>
+                </li>
+
+					<li class="nav-item">
+						<a class="nav-link" href="project-map.html">Расположение</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+<!-- Nav menu end -->
+		
+<!-- Carousel start -->
+		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="img/top-1.jpg" class="d-block w-100" alt="Отель" />
+				</div>
+				<div class="carousel-item">
+					<img src="img/beath.jpg" class="d-block w-100" alt="Пляж" />
+				</div>
+				<div class="carousel-item">
+					<img src="img/IMG_5061-1.jpg" class="d-block w-100" alt="Регата" />
+				</div>
+			</div>
+			<a
+				class="carousel-control-prev"
+				href="#carouselExampleIndicators"
+				role="button"
+				data-slide="prev"
+			>
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Предыдущий</span>
+			</a>
+			<a
+				class="carousel-control-next"
+				href="#carouselExampleIndicators"
+				role="button"
+				data-slide="next"
+			>
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Следующий</span>
+			</a>
+		</div>
+<!-- Carousel end -->
+
+		<div class="container my-5">
+			<div class="row">
+				<div 
+				class="col-lg-4 text-center text-white">
+				<div class="box bg-warning">
+				        <img src="img/ap4-1.jpg" class="card-img" alt="Стандарт">
+					<i>
+					<p>Номер "Стандарт"</p>
+					<p>Стоимость 1000 руб./сутки</p>
+					<p>
+						<a href="project-booking.html" class="btn btn-warning btn-sm text-white" 
+						role="button" aria-pressed="true">Забронировать</a>
+					</p>
+					</i>
+				</div>
+			    </div>
+
+				<div 
+				class="col-lg-4 text-center text-white">
+				<div class="box bg-info">
+					<img src="img/ap3-1.jpg" class="card-img" alt="Стандарт">
+					<i>
+					<p>Номер "Стандарт+"</p>
+					<p>Стоимость <s>1500</s>&nbsp; 1200 руб./сутки</p>
+					<p>
+						<a href="project-booking.html" class="btn btn-info btn-sm text-white" 
+						role="button" aria-pressed="true">Забронировать</a>
+					</p>
+					</i>
+				</div>
+			    </div>
+
+				<div 
+				class="col-lg-4 text-center text-white">
+				<div class="box bg-primary">
+					<img src="img/ap2-1.jpg" class="card-img" alt="Люкс">
+					<i>
+					<p>Номер "Люкс"</p>
+					<p>Стоимость 1500 руб./сутки</p>
+                    <p>
+						<a href="project-booking.html" class="btn btn-primary btn-sm text-white" 
+						role="button" aria-pressed="true">Забронировать</a>
+					</p>
+					</i>
+					
+				</div>
+			    </div>
+		    </div>
+        </div>
+
+
+<!-- footer start -->
+<footer class="container-fluid py-3 text-center" style="background-color: rgb(98, 150, 188)">
+	<font style="color: black">© Все права защищены 2022</font>
+<div>wideta@anlubi.com</div>
+</footer>
+<!-- footer end -->
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
